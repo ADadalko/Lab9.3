@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html
+    head
+        title  Заказы
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="style.css")
+    body
+        h2 Заказы
+        table
+            thead
+                tr
+                    th ID
+                    th Товар
+                    th Количество
+                    th Цена (в рублях)
+            - for (var x = 0; x < result.length; x++)
+                tr
+                    td #{result[x]._id}
+                    td #{result[x].name}
+                    td #{result[x].lesson}
+                    td #{result[x].time}
+
+

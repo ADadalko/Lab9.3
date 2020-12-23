@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Заказ товара</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/edit.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Заказ товара</h2>
+    <form name="sheduleForm">
+      <input type="hidden" name="id" value="0" />
+      <label for="region">Название: <input name="region" type="text" /></label>
+      <label for="lesson">Количество: <input type="number" name="lesson" min="0"/></label>
+      <label for="time"
+        >Цена (в рублях): <input type="number" name="time"
+      /></label>
+      <button type="submit">Сохранить</button>
+      <a id="open">Открыть отчет</a>
+      <a id="reset">Сбросить</a>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Товар</th>
+          <th>Количество</th>
+          <th>Цена (в рублях)</th>
+          <th>Редактирование</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="/add.js"></script>
+    <script src="/delete.js"></script>
+    <script src="/edit.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
